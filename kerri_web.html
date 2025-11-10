@@ -333,13 +333,14 @@
             font-size: 17px;
             word-spacing: 2px;
         }
-       
-        .s1_h1_{
+
+        .s1_h1_ {
             text-align: center;
             margin-top: 100px;
             word-spacing: 3px;
         }
-        .s1_btn_{
+
+        .s1_btn_ {
             display: block;
             margin: auto;
             margin-top: 20px;
@@ -351,50 +352,90 @@
             font-weight: bold;
             font-size: 17px;
             border-radius: 20px;
-            box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.418);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
             transition: all .2s ease-out;
         }
-        .s1_btn_:hover{
+
+        .s1_btn_:hover {
             transform: scale(1.1);
             cursor: pointer;
         }
-        .s2{
+
+        .s2 {
             height: 100vh;
             width: 100%;
             /* border: solid black 1px; */
             background-color: rgba(128, 128, 128, 0.205);
             padding-top: .1px;
         }
-        .s2_h1{
+
+        .s2_h1 {
             text-align: center;
             margin-top: 70px;
             font-size: 40px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s2_span{
+
+        .s2_span {
             font-weight: normal;
         }
-        .s2_pt{
+
+        .s2_pt {
             text-align: center;
             margin-top: 10px;
             font-size: 15px;
             font-weight: bold;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s2_div{
+
+        .s2_div {
             height: 60%;
             width: 100%;
             /* border: solid black 1px; */
             margin-top: 50px;
             padding-top: .1px;
+            overflow: hidden;
+            position: relative;
         }
-        .slider_container{
+
+        .slider_container {
             height: 100%;
             width: 303%;
             /* border: solid black 1px; */
             padding-top: .1px;
+
+            /* margin-left: -1366px; */
+            /* margin-left: -2730px; */
+            animation: gallery 9s ease-out infinite;
         }
-        .slider_boxes{
+
+        @keyframes gallery {
+            0% {
+                margin-left: 0px;
+            }
+
+            33% {
+                margin-left: 0px;
+            }
+
+            34% {
+                margin-left: -1366px;
+            }
+
+            66% {
+                margin-left: -1366px;
+            }
+
+            67% {
+                margin-left: -2730px;
+            }
+
+            100% {
+                margin-left: -2730px;
+            }
+        }
+
+        .slider_boxes {
             height: 100%;
             width: 33%;
             /* background-color: red; */
@@ -403,18 +444,21 @@
             vertical-align: top;
             padding-top: .1px;
         }
-        .fire_div{
+
+        .fire_div {
             height: 40px;
             width: 40px;
             /* border: solid black 1px; */
             margin: auto;
             margin-top: 5px;
         }
-        #fire{
+
+        #fire {
             height: 100%;
             width: 100%;
         }
-        .c_div{
+
+        .c_div {
             height: 130px;
             width: 130px;
             border: solid black 1px;
@@ -422,7 +466,8 @@
             margin: auto;
             margin-top: 12px;
         }
-        .c_div2{
+
+        .c_div2 {
             height: 100px;
             width: 100px;
             border: solid black 1px;
@@ -431,25 +476,144 @@
             margin-top: 14px;
             overflow: hidden;
         }
-        .s2_ptag{
+
+        .s2_ptag {
             text-align: center;
             margin-top: 22px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s2_ptag2{
+
+        .s2_ptag2 {
             text-align: center;
             margin-top: 7px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s2_ptag3{
+
+        .s2_ptag3 {
             text-align: center;
             margin-top: 25px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s2_span2{
+
+        .s2_span2 {
             font-weight: bold;
             font-size: 20px;
         }
+
+        .s2_div2 {
+            height: 5px;
+            width: 130px;
+            position: absolute;
+            /* border: solid black 1px; */
+            z-index: 2;
+            left: 605px;
+            bottom: 30px;
+        }
+
+        .s2_div3 {
+            height: 100%;
+            width: 20%;
+            /* border: solid black 1px; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            background-color: rgb(247, 94, 120);
+            border-radius: 14px;
+            opacity: .7;
+            animation: linee1 9s ease-out infinite;
+        }
+        @keyframes linee1{
+            0%{
+                opacity: 1;
+                width: 30px;
+            }
+            33%{
+                opacity: 1;
+                width: 30px;
+            }
+            34%{
+                opacity: .7;
+                width: 20%;
+            }
+            100%{
+                opacity: .7;
+                width: 20%;
+            }
+
+        }
+
+        
+
+        .s2_div4 {
+            height: 100%;
+            width: 20%;
+            /* border: solid black 1px; */
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 14px;
+            opacity: .7;
+             animation: linee2 9s ease-out infinite;
+            background-color: rgb(247, 94, 120);
+
+
+
+        }
+         @keyframes linee2{
+            0%{
+                opacity: .7;
+                width: 20px;
+            }
+            33%{
+                opacity: .7;
+                width: 20px;
+            }
+            34%{
+                opacity: 1;
+                width: 30px;
+            }
+            66%{
+                opacity: .7;
+                width: 30px;
+            }
+            100%{
+                opacity:.7 ;
+                width: 30px;
+            }
+
+        }
+      
+        .s2_div5 {
+            height: 100%;
+            width: 20%;
+            /* border: solid black 1px; */
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 14px;
+            opacity: .7;
+            background-color: rgb(247, 94, 120);
+             animation: linee3 9s ease-out infinite;
+        }
+         @keyframes linee3{
+            0%{
+                opacity: .7;
+                width: 20px;
+            }
+           
+            66%{
+                opacity: .7;
+                width: 20px;
+            }
+            67%{
+                opacity: 1;
+                width: 30px;
+            }
+            100%{
+                opacity:1;
+                width: 30px;
+            }
+
+        }
+        
     </style>
 </head>
 
@@ -585,9 +749,10 @@
             <button class="s1_btn_">Hire Me !</button>
         </section>
         <!-- //////////////s1//////// -->
-         <section class="s2">
+        <section class="s2">
             <h1 class="s2_h1"><span class="s2_span">Our</span> Client</h1>
-            <p class="s2_pt">IT is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+            <p class="s2_pt">IT is a long established fact that a reader will be of a page when established fact looking
+                at its layout.</p>
             <div class="s2_div">
                 <div class="slider_container">
                     <div class="slider_boxes">
@@ -599,7 +764,8 @@
                                 <img src="./images/u1.jpg" alt="">
                             </div>
                         </div>
-                        <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi quo ut ab</p>
+                        <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi
+                            quo ut ab</p>
                         <p class="s2_ptag2">ratione dolores doloribus, dolorem nam quia laboriosam?</p>
                         <p class="s2_ptag3">Ebony Verty <span class="s2_span2">Envato</span></p>
                     </div>
@@ -609,17 +775,38 @@
                         </div>
                         <div class="c_div">
                             <div class="c_div2">
-                                <img src="./images/u1.jpg" alt="">
+                                <img src="./images/rambo.jpg" alt="">
                             </div>
                         </div>
-                        <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi quo ut ab</p>
+                        <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi
+                            quo ut ab</p>
                         <p class="s2_ptag2">ratione dolores doloribus, dolorem nam quia laboriosam?</p>
                         <p class="s2_ptag3">Ebony Verty <span class="s2_span2">Envato</span></p>
                     </div>
-                    <div class="slider_boxes" style="margin-left: 10px;"></div>
+                    <div class="slider_boxes" style="margin-left: 10px;">
+                        <div class="fire_div">
+                            <img id="fire" src="./images/fire-removebg-preview.png" alt="">
+                        </div>
+                        <div class="c_div">
+                            <div class="c_div2">
+                                <img src="./images/johny.jpg" alt="">
+                            </div>
+                        </div>
+                        <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi
+                            quo ut ab</p>
+                        <p class="s2_ptag2">ratione dolores doloribus, dolorem nam quia laboriosam?</p>
+                        <p class="s2_ptag3">Ebony Verty <span class="s2_span2">Envato</span></p>
+                    </div>
+                </div>
+
+                <div class="s2_div2">
+                    <div class="s2_div3"></div>
+                    <div class="s2_div4"></div>
+                    <div class="s2_div5"></div>
                 </div>
             </div>
-         </section>
+        </section>
+        <!-- ////////////////s2//////////////// -->
     </main>
 
 
