@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .p_text {
+            width: 650px;
+            /* border: solid black; */
+            height: 100px;
+            margin: auto;
+            margin-top: 300px;
+            position: relative;
+        }
+
+        /* 60px */
+        /* 300px */
+        /* 280px */
+        /* 340px */
+
+
+        .p_text::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "I AM A Full Stack Developer ";
+            width: 60px;
+            font-size: 30px;
+            border-right: solid black;
+            text-wrap: nowrap;
+            overflow: hidden;
+            animation: textanime 9s ease-in-out infinite;
+        }
+
+        @keyframes textanime {
+            0% {
+                width: 60px;
+                content: "I AM A Graphic Desinger";
+            }
+
+            5% {
+                width: 300px;
+            }
+
+            28% {
+                width: 300px;
+            }
+
+            33% {
+                width: 60px;
+                content: "I AM A Graphic Desinger";
+            }
+
+            /* //////////////// first 2 sec   // */
+            34% {
+                width: 60px;
+                content: "I AM A PhotoGrapher";
+            }
+
+            39% {
+                width: 270px;
+            }
+
+            61% {
+                width: 270px;
+            }
+
+            66% {
+                width: 60px;
+                content: "I AM A PhotoGrapher";
+            }
+
+            /* ////////////// */
+            67% {
+                width: 60px;
+                content: "I AM A Full Stack Developer";
+            }
+
+            72% {
+                width: 340px;
+            }
+
+            95% {
+                width: 340px;
+            }
+
+            100% {
+                width: 60px;
+                content: "I AM A Full Stack Developer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="p_text"></div>
+    </main>
+</body>
+
+</html>
