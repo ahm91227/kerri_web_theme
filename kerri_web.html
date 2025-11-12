@@ -30,7 +30,7 @@
             position: absolute;
             height: 100vh;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.26);
+            background-color: rgba(0, 0, 0, 0.521);
             padding-top: .1px;
         }
 
@@ -78,7 +78,7 @@
         }
 
         .lis:hover {
-            color: rgba(223, 60, 60, 0.733);
+            color: rgba(247, 127, 201, 0.952);
             cursor: pointer;
             transform: rotate(5deg);
         }
@@ -88,7 +88,7 @@
             width: 50%;
             margin: auto;
             margin-top: 200px;
-            border: solid black 1px;
+            /* border: solid black 1px; */
             padding-top: .1px;
         }
 
@@ -99,14 +99,80 @@
             font-weight: bold;
         }
 
-        .h_div3 {
-            height: 70px;
-            width: 80%;
-            border: solid black 1px;
+        .h_div3{
+            height: 50px;
+            width: 300px;
+            /* border: solid black 1px; */
             margin: auto;
             margin-top: 20px;
+            position: relative;
         }
+        .h_div3::before{
+            content: 'I am a photographer';
+            position: absolute;
+            font-size: 30px;
+            color: white;
+            border-right: solid white 3px;
 
+            width: 300px;
+            top: 5px;
+            left: 20px;
+            text-wrap: nowrap;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: textline 8s ease-out infinite;
+
+
+        }
+        @keyframes textline{
+            0%{
+                width: 60px;
+                content: 'I AM A PHOTOGRAPHER';
+            }
+            5%{
+                width: 345px;
+            }
+            28%{
+                width: 345px;
+            }
+            33%{
+                width: 60px;
+                content: 'I AM A PHOTOGRAPHER';
+            }
+            34%{
+                width: 60px;
+                content: 'I AM A Web DEVELOPER';
+            }
+            39%{
+                width: 350px;
+
+            }
+            61%{
+                width: 350px;
+            }
+            66%{
+                 width: 60px;
+                content: 'I AM A Web DEVELOPER';
+            }
+             67% {
+                width: 60px;
+                content: "I AM A FULL STACK DEVELOPER";
+            }
+
+            72% {
+                width: 460px;
+            }
+
+            95% {
+                width: 460px;
+            }
+
+            100% {
+                width: 60px;
+                content: "I AM A FULL STACK DEVELOPER";
+            }
+        }
+       
         .h_ptag2 {
             color: white;
             font-size: 22px;
@@ -138,20 +204,28 @@
         }
 
         .div3 {
-            height: 40px;
-            width: 30px;
-            border: solid black 1px;
+            height: 90px;
+            width: 35px;
+            /* border: solid black 1px; */
             margin: auto;
-            margin-top: 10px;
+            margin-top: 50px;
             position: relative;
         }
 
         #mouse {
             color: white;
             margin-top: 10px;
-            font-size: 18px;
-            margin-left: 3px;
+            font-size: 25px;
             position: absolute;
+            animation: mouse 1s ease-in-out infinite alternate;
+        }
+        @keyframes mouse{
+            form{
+                margin-top: -45px;
+            }
+            to{
+                margin-top: 55px;
+            }
         }
 
         .s1 {
@@ -963,46 +1037,201 @@
             height: 100%;
             width: 100%;
         }
-        .s4_div3{
+
+        .s4_div3 {
             height: 50%;
             width: 33%;
             /* border: solid black 1px; */
             display: inline-block;
             vertical-align: top;
         }
-        .s4_h1_{
+
+        .s4_h1_ {
             font-size: 19px;
             margin-left: 29px;
             margin-top: 10px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s4_ptag{
+
+        .s4_ptag {
             margin-left: 29px;
             margin-top: 7px;
 
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .s4_span{
+
+        .s4_span {
             color: rgb(218, 30, 61);
             font-weight: bold;
         }
-        .s4_ptag2{
+
+        .s4_ptag2 {
             margin-left: 29px;
             margin-top: 10px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .s4_ptag3{
+
+        .s4_ptag3 {
             margin-left: 29px;
             margin-top: 23px;
             font-weight: bold;
 
         }
-        .s5{
-            height: 130vh;
+
+        .s5 {
+            height: 150vh;
             width: 100%;
-            border: solid black 1px;
+            /* border: solid black 1px; */
         }
 
+        .s5_div {
+            height: 17.5%;
+            width: 90%;
+            /* border: solid black 1px; */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .s5_div2 {
+            height: 40%;
+            width: 20%;
+            /* border: solid black 1px; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 130px;
+        }
+
+        #mobile {
+            height: 100%;
+            width: 100%;
+            font-size: 60px;
+            color: rgb(219, 47, 76);
+        }
+
+        .s5_ch_div {
+            height: 50%;
+            width: 19%;
+            /* border: solid black 1px; */
+            margin-left: 130px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .s5_ptag {
+            margin-left: 70px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .s5_ptag2 {
+            margin-left: 70px;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form {
+            height: 50%;
+            width: 100%;
+            /* border: solid black 1px; */
+            margin-top: 30px;
+        }
+
+        #input {
+            width: 42%;
+            height: 7%;
+            margin-left: 70px;
+            margin-top: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+            padding-right: 10px;
+            border: solid black 1px;
+            display: inline-block;
+            vertical-align: top;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #subject {
+            width: 87.5%;
+            margin-left: 70px;
+            height: 7%;
+            margin-top: 25px;
+            border-radius: 5px;
+            border: solid black 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #textarea {
+            margin-left: 70px;
+            margin-top: 20px;
+            width: 87.5%;
+            height: 30%;
+            border-radius: 5px;
+            resize: none;
+            border: solid black 1px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+            margin-top: 40px;
+            width: 12%;
+            height: 8%;
+            margin-left: 1090px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(228, 51, 80);
+            transition: all .2s linear;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .footer{
+            height: 30vh;
+            width: 100%;
+            padding-top: .1px;
+            background-color: rgba(0, 0, 0, 0.671);
+        }
+        .f_div{
+            height: 50px;
+            width: 20%;
+            margin: auto;
+            /* border: solid red 1px; */
+            margin-top: 80px;
+
+        }
+        .f_innrdivs{
+            height: 100%;
+            width: 20%;
+            /* border: solid blue 1px; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        #facebook{
+            height: 100%;
+            width: 100%;
+            font-size: 30px;
+            margin-top: 7px;
+            color: rgba(0, 0, 0, 0.603);
+        }
+        .f_pt{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5px;
+            color: rgb(196, 192, 192);
+        }
     </style>
 </head>
 
@@ -1284,36 +1513,89 @@
 
                     <h1 class="s4_h1_">There are many variations</h1>
                     <p class="s4_ptag">11 March 2018 <span class="s4_span">By Merry!</span></p>
-                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
+                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam
+                        suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
                     <p class="s4_ptag3">READ MORE....</p>
                 </div>
-                 <div class="s4_div3">
+                <div class="s4_div3">
 
                     <h1 class="s4_h1_">There are many variations</h1>
                     <p class="s4_ptag">11 March 2018 <span class="s4_span">By Merry!</span></p>
-                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
+                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam
+                        suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
                     <p class="s4_ptag3">READ MORE....</p>
                 </div>
-                 <div class="s4_div3">
+                <div class="s4_div3">
 
                     <h1 class="s4_h1_">There are many variations</h1>
                     <p class="s4_ptag">11 March 2018 <span class="s4_span">By Merry!</span></p>
-                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
+                    <p class="s4_ptag2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam
+                        suscipit quia dolores vel facere, labore aliquid. Quidem, laborum excepturi. Ea, fuga.</p>
                     <p class="s4_ptag3">READ MORE....</p>
                 </div>
 
-               
+
             </div>
         </section>
         <!-- ////////////s4/////////// -->
-         <section class="s5">
-              <h1 class="s4_h1">Contact Us</h1>
+        <section class="s5">
+            <h1 class="s4_h1">Contact Us</h1>
             <p class="s2_ptag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modiquo ut ab</p>
             <p class="s2_ptag2">ratione dolores doloribus, dolorem nam quia laboriosam?</p>
 
-            
+            <div class="s5_div">
+                <div class="s5_div2">
+                    <i id="mobile" class="fa-solid fa-mobile"></i>
+                </div>
+                <div class="s5_div2">
+                    <i id="mobile" class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="s5_div2">
+                    <i id="mobile" class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="s5_ch_div">
 
-         </section>
+                    <p class="s5_ptag">Call Us Now</p>
+                    <p class="s5_ptag2">+986 365 1835</p>
+                </div>
+                <div class="s5_ch_div" style="margin-left: 153px;">
+
+                    <p class="s5_ptag">Email Us At</p>
+                    <p class="s5_ptag2" style="margin-left: 24px;">Website Kerri@gamil.com</p>
+                </div>
+                <div class="s5_ch_div" style="margin-left: 150px;">
+
+                    <p class="s5_ptag">Visit Office</p>
+                    <p class="s5_ptag2" style="margin-left: 55px;">202,Grasselli Street</p>
+                </div>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your Name" id="input">
+                <input type="text" placeholder="Your Email" id="input" style="margin-left: 40px;">
+                <input type="text" placeholder="Your Subject" id="subject">
+                <textarea placeholder="Your Message" id="textarea"></textarea>
+                <button class="btn">Send Message</button>
+            </div>
+
+        </section>
+        <!-- //////////s5/////////// -->
+         <footer class="footer">
+            <div class="f_div">
+                <div class="f_innrdivs">
+                    <i id="facebook" class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="f_innrdivs">
+                <i id="facebook" class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="f_innrdivs">
+                    <i id="facebook" class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="f_innrdivs">
+                    <i id="facebook" class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <p class="f_pt">2018-2021 @ kerri Design by SRBIThems.</p>
+         </footer>
     </main>
 
 
